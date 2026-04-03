@@ -145,21 +145,21 @@ export function HangmanGame() {
         </aside>
 
         <section className="section-card order-2 rounded-[1.9rem] p-5 sm:p-7 xl:order-1">
-          <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
               <h2 className="display-font text-3xl font-semibold text-white sm:text-4xl">
                 Jogo da Forca
               </h2>
             </div>
 
-            <div className="flex flex-wrap gap-3">
-              <span className="rounded-full border border-sky-200/15 bg-sky-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-100">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center lg:shrink-0">
+              <span className="rounded-full border border-sky-200/15 bg-sky-300/10 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.24em] text-sky-100 sm:px-6">
                 Tema: filmes
               </span>
               <button
                 type="button"
                 onClick={resetGame}
-                className="rounded-full border border-sky-200/20 bg-sky-300 px-5 py-3 text-sm font-semibold text-slate-950 hover:-translate-y-0.5 hover:bg-sky-200"
+                className="rounded-full border border-sky-200/20 bg-sky-300 px-6 py-3 text-base font-semibold text-slate-950 hover:-translate-y-0.5 hover:bg-sky-200 sm:text-lg"
               >
                 Novo jogo
               </button>

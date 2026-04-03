@@ -53,18 +53,6 @@ export default function HangmanProjectPage() {
                   Jogar agora
                 </a>
               </div>
-
-              <div className="mt-8 flex flex-wrap gap-3">
-                <span className="pill rounded-full px-4 py-2 text-sm font-medium text-slate-100">
-                  Títulos em português
-                </span>
-                <span className="pill rounded-full px-4 py-2 text-sm font-medium text-slate-100">
-                  Popup de vitória e derrota
-                </span>
-                <span className="pill rounded-full px-4 py-2 text-sm font-medium text-slate-100">
-                  Layout mais confortável no mobile
-                </span>
-              </div>
             </div>
           </div>
         </section>

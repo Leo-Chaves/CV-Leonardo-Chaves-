@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { ContactCard } from "@/components/contact-card";
 import { ExperienceCard } from "@/components/experience-card";
@@ -26,7 +26,7 @@ export default function Home() {
         links={[
           { label: "Projetos", href: "#projetos" },
           { label: "Como trabalho", href: "#como-trabalho" },
-          { label: "Trajetória", href: "#experiencia" },
+          { label: "Trajet\u00f3ria", href: "#experiencia" },
           { label: "Stack", href: "#stack" },
           { label: "Contato", href: "#contato" },
           { label: "Jogo da Forca", href: "/jogo-da-forca" },
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[1.14fr_0.86fr] lg:items-center">
             <div>
               <span className="pill inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-sky-100/80">
-                Portfólio
+                {"Portf\u00f3lio"}
               </span>
 
               <div className="mt-6">
@@ -126,7 +126,7 @@ export default function Home() {
             <aside className="grid gap-4">
               <div className="surface-card rounded-[1.9rem] p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200/70">
-                  Visão geral
+                  {"Vis\u00e3o geral"}
                 </p>
                 <p className="mt-5 text-base leading-8 text-slate-300">
                   {personalInfo.summary}
@@ -135,7 +135,7 @@ export default function Home() {
 
               <div className="surface-card rounded-[1.9rem] p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200/70">
-                  O que você encontra aqui
+                  {"O que voc\u00ea encontra aqui"}
                 </p>
 
                 <div className="mt-5 grid gap-3">
@@ -189,30 +189,59 @@ export default function Home() {
           id="como-trabalho"
           className="section-card rounded-[2rem] px-6 py-8 sm:px-8 sm:py-10 lg:px-12"
         >
-          <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-            <SectionHeading
-              eyebrow="Como trabalho"
-              title="Meu foco hoje é criar sistemas claros, úteis e fáceis de manter."
-              description="Esses pontos resumem bem como eu costumo trabalhar no dia a dia."
-            />
+          <div className="grid gap-8 xl:grid-cols-[0.92fr_1.08fr] xl:items-center">
+            <div className="space-y-6">
+              <SectionHeading
+                eyebrow="Como trabalho"
+                title={"Meu foco hoje \u00e9 criar sistemas claros, \u00fateis e f\u00e1ceis de manter."}
+                description="Esses pontos resumem bem como eu costumo trabalhar no dia a dia."
+              />
+
+              <article className="surface-card rounded-[1.45rem] p-5 sm:p-6">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-sky-200/70">
+                  Em resumo
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {highlights.map((item) => (
+                    <span
+                      key={`summary-${item.title}`}
+                      className="pill rounded-full px-3 py-2 text-xs font-medium text-slate-100"
+                    >
+                      {item.title}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            </div>
 
             <div className="grid gap-4">
-              {highlights.map((item) => (
-                <article key={item.title} className="surface-card rounded-[1.5rem] p-6">
-                  <h3 className="display-font text-xl font-semibold text-white">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-300">{item.description}</p>
+              {highlights.map((item, index) => (
+                <article key={item.title} className="surface-card rounded-[1.5rem] p-6 sm:p-7">
+                  <div className="flex items-start gap-4">
+                    <span className="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-sky-200/15 bg-sky-300/10 text-sm font-semibold text-sky-100">
+                      0{index + 1}
+                    </span>
+
+                    <div>
+                      <h3 className="display-font text-2xl font-semibold text-white">
+                        {item.title}
+                      </h3>
+                      <p className="mt-3 max-w-2xl text-sm leading-8 text-slate-300 sm:text-base">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
                 </article>
               ))}
             </div>
           </div>
         </section>
-
         <section id="experiencia" className="section-card rounded-[2rem] px-6 py-8 sm:px-8 sm:py-10 lg:px-12">
           <div className="flex flex-col gap-8">
             <SectionHeading
-              eyebrow="Trajetória"
-              title="Um resumo da minha trajetória até aqui."
-              description="Deixei só o que ajuda a entender por onde passei e no que venho trabalhando."
+              eyebrow="Trajet\u00f3ria"
+              title="Um resumo da minha trajetÃ³ria atÃ© aqui."
+              description="Deixei sÃ³ o que ajuda a entender por onde passei e no que venho trabalhando."
             />
 
             <div className="grid gap-5">
@@ -229,7 +258,7 @@ export default function Home() {
               <SectionHeading
                 eyebrow="Stack e rotina"
                 title="Tecnologias que mais aparecem no meu dia a dia."
-                description="Essas são as ferramentas que eu mais uso nos projetos e nos estudos."
+                description="Essas sÃ£o as ferramentas que eu mais uso nos projetos e nos estudos."
               />
 
               <div className="mt-8 grid gap-4">
@@ -254,12 +283,12 @@ export default function Home() {
             <div className="grid gap-4">
               <article className="surface-card rounded-[1.5rem] p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.28em] text-sky-200/65">
-                  Base acadêmica
+                  {"Base acad\u00eamica"}
                 </p>
                 <div className="mt-4 rounded-[1.2rem] border border-white/8 bg-black/12 p-5">
                   <h3 className="text-lg font-semibold text-white">{personalInfo.educationLabel}</h3>
                   <p className="mt-3 text-sm leading-7 text-slate-300">
-                    A formação aparece como base da trajetória, sem ocupar uma seção inteira da home.
+                    {"A forma\u00e7\u00e3o aparece como base da trajet\u00f3ria, sem ocupar uma se\u00e7\u00e3o inteira da home."}
                   </p>
                 </div>
               </article>
@@ -270,8 +299,9 @@ export default function Home() {
                 </p>
                 <p className="mt-4 text-sm leading-7 text-slate-300">
                   Seguir evoluindo em desenvolvimento de software com mais projetos web,
-                  interfaces melhores, integrações sólidas e cada vez mais repertório em
-                  construção de produto.
+                  {"interfaces melhores, integra\u00e7\u00f5es s\u00f3lidas e cada vez mais repert\u00f3rio em"}
+                  {" "}
+                  {"constru\u00e7\u00e3o de produto."}
                 </p>
               </article>
             </div>
@@ -283,7 +313,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Contato"
               title="Vamos conversar."
-              description="Se quiser falar sobre oportunidade, projeto ou parceria, estes são os canais."
+              description="Se quiser falar sobre oportunidade, projeto ou parceria, estes sÃ£o os canais."
             />
 
             <div className="grid gap-4 lg:grid-cols-3">
