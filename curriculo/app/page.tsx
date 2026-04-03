@@ -26,7 +26,7 @@ export default function Home() {
         links={[
           { label: "Projetos", href: "#projetos" },
           { label: "Como trabalho", href: "#como-trabalho" },
-          { label: "Trajet\u00f3ria", href: "#experiencia" },
+          { label: "Trajetória", href: "#experiencia" },
           { label: "Stack", href: "#stack" },
           { label: "Contato", href: "#contato" },
           { label: "Jogo da Forca", href: "/jogo-da-forca" },
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[1.14fr_0.86fr] lg:items-center">
             <div>
               <span className="pill inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-sky-100/80">
-                {"Portf\u00f3lio"}
+                {"Portfólio"}
               </span>
 
               <div className="mt-6">
@@ -126,7 +126,7 @@ export default function Home() {
             <aside className="grid gap-4">
               <div className="surface-card rounded-[1.9rem] p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200/70">
-                  {"Vis\u00e3o geral"}
+                  {"Visão geral"}
                 </p>
                 <p className="mt-5 text-base leading-8 text-slate-300">
                   {personalInfo.summary}
@@ -135,7 +135,7 @@ export default function Home() {
 
               <div className="surface-card rounded-[1.9rem] p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200/70">
-                  {"O que voc\u00ea encontra aqui"}
+                  {"O que você encontra aqui"}
                 </p>
 
                 <div className="mt-5 grid gap-3">
@@ -193,7 +193,7 @@ export default function Home() {
             <div className="space-y-6">
               <SectionHeading
                 eyebrow="Como trabalho"
-                title={"Meu foco hoje \u00e9 criar sistemas claros, \u00fateis e f\u00e1ceis de manter."}
+                title={"Meu foco hoje é criar sistemas claros, úteis e fáceis de manter."}
                 description="Esses pontos resumem bem como eu costumo trabalhar no dia a dia."
               />
 
@@ -239,9 +239,9 @@ export default function Home() {
         <section id="experiencia" className="section-card rounded-[2rem] px-6 py-8 sm:px-8 sm:py-10 lg:px-12">
           <div className="flex flex-col gap-8">
             <SectionHeading
-              eyebrow="Trajet\u00f3ria"
-              title={"Um resumo da minha trajet\u00f3ria at\u00e9 aqui."}
-              description={"Deixei s\u00f3 o que ajuda a entender por onde passei e no que venho trabalhando."}
+              eyebrow="Trajetória"
+              title={"Um resumo da minha trajetória até aqui."}
+              description={"Deixei só o que ajuda a entender por onde passei e no que venho trabalhando."}
             />
 
             <div className="grid gap-5">
@@ -258,7 +258,7 @@ export default function Home() {
               <SectionHeading
                 eyebrow="Stack e rotina"
                 title="Tecnologias que mais aparecem no meu dia a dia."
-                description={"Essas s\u00e3o as ferramentas que eu mais uso nos projetos e nos estudos."}
+                description={"Essas são as ferramentas que eu mais uso nos projetos e nos estudos."}
               />
 
               <div className="mt-8 grid gap-4">
@@ -283,12 +283,12 @@ export default function Home() {
             <div className="grid gap-4">
               <article className="surface-card rounded-[1.5rem] p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.28em] text-sky-200/65">
-                  {"Base acad\u00eamica"}
+                  {"Base acadêmica"}
                 </p>
                 <div className="mt-4 rounded-[1.2rem] border border-white/8 bg-black/12 p-5">
                   <h3 className="text-lg font-semibold text-white">{personalInfo.educationLabel}</h3>
                   <p className="mt-3 text-sm leading-7 text-slate-300">
-                    {"A forma\u00e7\u00e3o aparece como base da trajet\u00f3ria, sem ocupar uma se\u00e7\u00e3o inteira da home."}
+                    {"A formação aparece como base da trajetória, sem ocupar uma seção inteira da home."}
                   </p>
                 </div>
               </article>
@@ -299,9 +299,9 @@ export default function Home() {
                 </p>
                 <p className="mt-4 text-sm leading-7 text-slate-300">
                   Seguir evoluindo em desenvolvimento de software com mais projetos web,
-                  {"interfaces melhores, integra\u00e7\u00f5es s\u00f3lidas e cada vez mais repert\u00f3rio em"}
+                  {"interfaces melhores, integrações sólidas e cada vez mais repertório em"}
                   {" "}
-                  {"constru\u00e7\u00e3o de produto."}
+                  {"construção de produto."}
                 </p>
               </article>
             </div>
@@ -313,7 +313,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Contato"
               title="Vamos conversar."
-              description={"Se quiser falar sobre oportunidade, projeto ou parceria, estes s\u00e3o os canais."}
+              description={"Se quiser falar sobre oportunidade, projeto ou parceria, estes são os canais."}
             />
 
             <div className="grid gap-4 lg:grid-cols-3">

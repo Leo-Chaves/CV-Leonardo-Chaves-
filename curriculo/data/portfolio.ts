@@ -59,7 +59,7 @@ export const experiences = [
   },
   {
     company: "Base técnica complementar",
-    period: "trajetória anterior",
+    period: "Trajetória anterior",
     role: "Suporte, organização e leitura de operação",
     bullets: [
       "Vivências anteriores em suporte e atendimento fortaleceram minha leitura de contexto, comunicação e resolução de problemas.",
