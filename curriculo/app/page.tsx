@@ -240,8 +240,8 @@ export default function Home() {
           <div className="flex flex-col gap-8">
             <SectionHeading
               eyebrow="Trajet\u00f3ria"
-              title="Um resumo da minha trajetÃ³ria atÃ© aqui."
-              description="Deixei sÃ³ o que ajuda a entender por onde passei e no que venho trabalhando."
+              title={"Um resumo da minha trajet\u00f3ria at\u00e9 aqui."}
+              description={"Deixei s\u00f3 o que ajuda a entender por onde passei e no que venho trabalhando."}
             />
 
             <div className="grid gap-5">
@@ -258,7 +258,7 @@ export default function Home() {
               <SectionHeading
                 eyebrow="Stack e rotina"
                 title="Tecnologias que mais aparecem no meu dia a dia."
-                description="Essas sÃ£o as ferramentas que eu mais uso nos projetos e nos estudos."
+                description={"Essas s\u00e3o as ferramentas que eu mais uso nos projetos e nos estudos."}
               />
 
               <div className="mt-8 grid gap-4">
@@ -313,7 +313,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Contato"
               title="Vamos conversar."
-              description="Se quiser falar sobre oportunidade, projeto ou parceria, estes sÃ£o os canais."
+              description={"Se quiser falar sobre oportunidade, projeto ou parceria, estes s\u00e3o os canais."}
             />
 
             <div className="grid gap-4 lg:grid-cols-3">
