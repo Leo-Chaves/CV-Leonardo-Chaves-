@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { HangmanGame } from "@/components/hangman-game";
 import { SiteHeader } from "@/components/site-header";
@@ -6,7 +6,7 @@ import { SiteHeader } from "@/components/site-header";
 export const metadata: Metadata = {
   title: "Jogo da Forca",
   description:
-    "Pagina dedicada ao projeto Jogo da Forca com interface elegante e jogabilidade completa em Next.js.",
+    "Página dedicada ao projeto Jogo da Forca com interface elegante e jogabilidade completa em Next.js.",
 };
 
 export default function HangmanProjectPage() {
@@ -17,7 +17,7 @@ export default function HangmanProjectPage() {
 
       <SiteHeader
         links={[
-          { label: "Portfolio", href: "/" },
+          { label: "Portfólio", href: "/" },
           { label: "Contato", href: "/#contato" },
         ]}
       />
@@ -33,9 +33,9 @@ export default function HangmanProjectPage() {
                 Jogo da Forca
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-                Uma demonstracao de interface interativa aplicada a um projeto classico,
-                mantendo a mesma linguagem visual do portfolio: fundo em azul escuro,
-                degrades suaves, componentes limpos e agora uma experiencia mais
+                Uma demonstração de interface interativa aplicada a um projeto clássico,
+                mantendo a mesma linguagem visual do portfólio: fundo em azul escuro,
+                degradês suaves, componentes limpos e agora uma experiência mais
                 refinada para desktop e mobile.
               </p>
 
@@ -44,7 +44,7 @@ export default function HangmanProjectPage() {
                   href="/"
                   className="rounded-full border border-sky-200/20 bg-sky-200/8 px-6 py-3 text-sm font-semibold text-sky-50 hover:-translate-y-0.5 hover:bg-sky-200/12"
                 >
-                  Voltar ao portfolio
+                  Voltar ao portfólio
                 </Link>
                 <a
                   href="#jogo"
@@ -56,13 +56,13 @@ export default function HangmanProjectPage() {
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <span className="pill rounded-full px-4 py-2 text-sm font-medium text-slate-100">
-                  Titulos em portugues
+                  Títulos em português
                 </span>
                 <span className="pill rounded-full px-4 py-2 text-sm font-medium text-slate-100">
-                  Popup de vitoria e derrota
+                  Popup de vitória e derrota
                 </span>
                 <span className="pill rounded-full px-4 py-2 text-sm font-medium text-slate-100">
-                  Layout mais confortavel no mobile
+                  Layout mais confortável no mobile
                 </span>
               </div>
             </div>

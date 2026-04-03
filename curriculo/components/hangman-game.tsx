@@ -30,7 +30,7 @@ export function HangmanGame() {
   const [word, setWord] = useState<string>(() => getRandomWord());
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
   const [feedback, setFeedback] = useState(
-    "Use o teclado virtual ou pressione letras no teclado para comecar.",
+    "Use o teclado virtual ou pressione letras no teclado para começar.",
   );
   const [dismissedModalWord, setDismissedModalWord] = useState("");
 
@@ -81,7 +81,7 @@ export function HangmanGame() {
     }
 
     if (guessedLetters.includes(letter)) {
-      setFeedback(`A letra ${letter} ja foi usada. Escolha outra tentativa.`);
+      setFeedback(`A letra ${letter} já foi usada. Escolha outra tentativa.`);
       return;
     }
 
@@ -93,7 +93,7 @@ export function HangmanGame() {
     setFeedback(
       isCorrect
         ? `Boa! A letra ${letter} faz parte do filme.`
-        : `A letra ${letter} nao aparece no titulo sorteado.`,
+        : `A letra ${letter} não aparece no título sorteado.`,
     );
   };
 
@@ -129,10 +129,10 @@ export function HangmanGame() {
     setDismissedModalWord(word);
   };
 
-  const modalTitle = hasWon ? "Parabens!" : "Fim de jogo";
+  const modalTitle = hasWon ? "Parabéns!" : "Fim de jogo";
   const modalDescription = hasWon
-    ? `Voce acertou o filme ${word}.`
-    : `A palavra correta era ${word}. Tente outro titulo.`;
+    ? `Você acertou o filme ${word}.`
+    : `A palavra correta era ${word}. Tente outro título.`;
   const wordGroups = word.split(" ");
   const wordTileClassName =
     "flex h-[clamp(3.2rem,10vw,4.5rem)] w-[clamp(1.35rem,6.2vw,2.75rem)] items-end justify-center rounded-[0.95rem] border border-white/10 bg-slate-950/40 pb-2 text-[clamp(1rem,4.6vw,1.55rem)] font-semibold tracking-[0.03em] text-white";
@@ -234,7 +234,7 @@ export function HangmanGame() {
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-sky-200/65">
                 Teclado
               </p>
-              <span className="text-xs text-slate-400">toque ou use o teclado fisico</span>
+              <span className="text-xs text-slate-400">toque ou use o teclado físico</span>
             </div>
 
             <div className="mt-4 grid grid-cols-7 gap-2 sm:grid-cols-9">
@@ -303,7 +303,7 @@ export function HangmanGame() {
                     </span>
                   ))
                 ) : (
-                  <span className="text-sm text-slate-400">Nenhum erro ate aqui.</span>
+                  <span className="text-sm text-slate-400">Nenhum erro até aqui.</span>
                 )}
               </div>
             </div>

@@ -26,7 +26,7 @@ export default function Home() {
         links={[
           { label: "Projetos", href: "#projetos" },
           { label: "Como trabalho", href: "#como-trabalho" },
-          { label: "Trajetoria", href: "#experiencia" },
+          { label: "Trajetória", href: "#experiencia" },
           { label: "Stack", href: "#stack" },
           { label: "Contato", href: "#contato" },
           { label: "Jogo da Forca", href: "/jogo-da-forca" },
@@ -38,7 +38,7 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[1.14fr_0.86fr] lg:items-center">
             <div>
               <span className="pill inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-sky-100/80">
-                Portfolio
+                Portfólio
               </span>
 
               <div className="mt-6">
@@ -126,7 +126,7 @@ export default function Home() {
             <aside className="grid gap-4">
               <div className="surface-card rounded-[1.9rem] p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200/70">
-                  Visao geral
+                  Visão geral
                 </p>
                 <p className="mt-5 text-base leading-8 text-slate-300">
                   {personalInfo.summary}
@@ -135,7 +135,7 @@ export default function Home() {
 
               <div className="surface-card rounded-[1.9rem] p-6 sm:p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200/70">
-                  O que voce encontra aqui
+                  O que você encontra aqui
                 </p>
 
                 <div className="mt-5 grid gap-3">
@@ -166,8 +166,8 @@ export default function Home() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeading
               eyebrow="Projetos em destaque"
-              title="Menos bloco de curriculo, mais trabalho que mostra como eu penso e construo."
-              description="Em vez de listar tudo, esta selecao prioriza o que melhor representa meu jeito de resolver problemas, desenhar interfaces e conectar camadas de um produto web."
+              title="Projetos que representam melhor o que eu venho fazendo."
+              description="Separei aqui os trabalhos que fazem mais sentido para mostrar meu jeito de desenvolver."
             />
 
             <Link
@@ -192,8 +192,8 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <SectionHeading
               eyebrow="Como trabalho"
-              title="Uma apresentacao fica mais forte quando o foco sai do historico completo e vai para impacto, criterio e construcao."
-              description="Esses pontos resumem melhor o valor do portfolio: contexto real de uso, integracao entre camadas e cuidado com a experiencia final."
+              title="Meu foco hoje é criar sistemas claros, úteis e fáceis de manter."
+              description="Esses pontos resumem bem como eu costumo trabalhar no dia a dia."
             />
 
             <div className="grid gap-4">
@@ -210,9 +210,9 @@ export default function Home() {
         <section id="experiencia" className="section-card rounded-[2rem] px-6 py-8 sm:px-8 sm:py-10 lg:px-12">
           <div className="flex flex-col gap-8">
             <SectionHeading
-              eyebrow="Trajetoria"
-              title="Experiencias escolhidas para dar contexto, sem transformar a home em curriculo completo."
-              description="Mantive somente os recortes que ajudam a entender sua evolucao como desenvolvedor e a forma como voce trabalha hoje."
+              eyebrow="Trajetória"
+              title="Um resumo da minha trajetória até aqui."
+              description="Deixei só o que ajuda a entender por onde passei e no que venho trabalhando."
             />
 
             <div className="grid gap-5">
@@ -228,8 +228,8 @@ export default function Home() {
             <div>
               <SectionHeading
                 eyebrow="Stack e rotina"
-                title="Tecnologias organizadas do jeito que fazem sentido para um portfolio."
-                description="Aqui entram as ferramentas que aparecem com frequencia no seu trabalho e que ajudam a contar como voce construi, integra e evolui produtos web."
+                title="Tecnologias que mais aparecem no meu dia a dia."
+                description="Essas são as ferramentas que eu mais uso nos projetos e nos estudos."
               />
 
               <div className="mt-8 grid gap-4">
@@ -254,12 +254,12 @@ export default function Home() {
             <div className="grid gap-4">
               <article className="surface-card rounded-[1.5rem] p-6">
                 <p className="text-xs font-semibold uppercase tracking-[0.28em] text-sky-200/65">
-                  Base academica
+                  Base acadêmica
                 </p>
                 <div className="mt-4 rounded-[1.2rem] border border-white/8 bg-black/12 p-5">
                   <h3 className="text-lg font-semibold text-white">{personalInfo.educationLabel}</h3>
                   <p className="mt-3 text-sm leading-7 text-slate-300">
-                    A formacao aparece como base da trajetoria, sem ocupar uma secao inteira da home.
+                    A formação aparece como base da trajetória, sem ocupar uma seção inteira da home.
                   </p>
                 </div>
               </article>
@@ -270,8 +270,8 @@ export default function Home() {
                 </p>
                 <p className="mt-4 text-sm leading-7 text-slate-300">
                   Seguir evoluindo em desenvolvimento de software com mais projetos web,
-                  interfaces melhores, integracoes solidas e cada vez mais repertorio em
-                  construcao de produto.
+                  interfaces melhores, integrações sólidas e cada vez mais repertório em
+                  construção de produto.
                 </p>
               </article>
             </div>
@@ -282,8 +282,8 @@ export default function Home() {
           <div className="flex flex-col gap-10">
             <SectionHeading
               eyebrow="Contato"
-              title="Contato direto, sem excesso de informacao paralela."
-              description="A pagina agora fecha com os canais principais e deixa o resto da conversa para quando realmente fizer sentido."
+              title="Vamos conversar."
+              description="Se quiser falar sobre oportunidade, projeto ou parceria, estes são os canais."
             />
 
             <div className="grid gap-4 lg:grid-cols-3">

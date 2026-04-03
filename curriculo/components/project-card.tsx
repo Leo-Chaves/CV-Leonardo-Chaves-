@@ -45,7 +45,7 @@ export function ProjectCard({
       </div>
 
       <div className="mt-8 text-sm font-semibold text-sky-100">
-        {href ? cta : "Projeto apresentado no portfolio"}
+        {href ? cta : "Projeto apresentado no portfólio"}
       </div>
     </>
   );
