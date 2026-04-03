@@ -1,26 +1,141 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #050a14;
+  --background-soft: #10213d;
+  --foreground: #e8f1ff;
+  --foreground-muted: #a8bad6;
+  --line: rgba(177, 198, 232, 0.14);
+  --panel: rgba(8, 20, 39, 0.76);
+  --panel-strong: rgba(8, 18, 36, 0.92);
+  --accent: #7bc5ff;
+  --accent-soft: #d8ecff;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Aptos", "Segoe UI", sans-serif;
+  --font-display: "Bahnschrift", "Arial Narrow", "Segoe UI", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Aptos", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 12% 14%, rgba(109, 179, 255, 0.2), transparent 24%),
+    radial-gradient(circle at 88% 18%, rgba(91, 153, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 50% 110%, rgba(240, 196, 123, 0.08), transparent 32%),
+    linear-gradient(180deg, #04070d 0%, #08111f 34%, #0b1a30 68%, #0d2341 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.02), transparent 45%);
+  background-size: 72px 72px, 72px 72px, 100% 100%;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent 92%);
+}
+
+::selection {
+  background: rgba(110, 175, 255, 0.24);
+  color: #f7fbff;
+}
+
+a,
+button,
+input {
+  transition:
+    transform 180ms ease,
+    opacity 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.page-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.section-card {
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(12, 27, 51, 0.9), rgba(7, 16, 31, 0.86)),
+    radial-gradient(circle at top right, rgba(131, 195, 255, 0.08), transparent 32%);
+  backdrop-filter: blur(16px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 28px 80px rgba(2, 8, 18, 0.42);
+}
+
+.surface-card {
+  border: 1px solid rgba(154, 180, 232, 0.12);
+  background:
+    linear-gradient(180deg, rgba(9, 22, 42, 0.96), rgba(6, 14, 28, 0.9)),
+    radial-gradient(circle at top left, rgba(132, 193, 255, 0.06), transparent 34%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 22px 48px rgba(0, 7, 18, 0.36);
+}
+
+.pill {
+  border: 1px solid rgba(160, 190, 243, 0.14);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+}
+
+.display-font {
+  font-family: "Bahnschrift", "Arial Narrow", "Segoe UI", sans-serif;
+}
+
+.hero-orb {
+  animation: floatOrb 8s ease-in-out infinite;
+}
+
+.fade-up {
+  animation: fadeUp 700ms ease both;
+}
+
+@keyframes floatOrb {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
