@@ -38,7 +38,7 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[1.14fr_0.86fr] lg:items-center">
             <div>
               <span className="pill inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-sky-100/80">
-                Portfolio selecionado
+                Portfolio
               </span>
 
               <div className="mt-6">
@@ -74,9 +74,6 @@ export default function Home() {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <span className="pill rounded-full px-4 py-2 text-sm font-medium text-slate-100">
-                  {personalInfo.location}
-                </span>
                 <a
                   href={`mailto:${personalInfo.email}`}
                   className="pill rounded-full px-4 py-2 text-sm font-medium text-slate-100 hover:border-sky-200/30 hover:bg-sky-200/10"
@@ -112,7 +109,7 @@ export default function Home() {
                   href="/jogo-da-forca"
                   className="rounded-full border border-sky-200/20 bg-sky-200/8 px-6 py-3 text-sm font-semibold text-sky-50 hover:-translate-y-0.5 hover:bg-sky-200/12"
                 >
-                  Abrir demo interativa
+                  Jogo da Forca
                 </Link>
               </div>
 
@@ -177,7 +174,7 @@ export default function Home() {
               href="/jogo-da-forca"
               className="inline-flex rounded-full border border-sky-200/20 bg-sky-200/8 px-5 py-3 text-sm font-semibold text-sky-50 hover:-translate-y-0.5 hover:bg-sky-200/12"
             >
-              Explorar demo
+              Abrir Jogo da Forca
             </Link>
           </div>
 

@@ -9,13 +9,13 @@ const visibleClass = "opacity-100";
 
 export function HangmanFigure({ wrongGuesses, maxErrors }: HangmanFigureProps) {
   return (
-    <div className="surface-card rounded-[1.75rem] p-5 sm:p-6">
-      <div className="mb-5 flex items-center justify-between gap-3">
+    <div className="surface-card rounded-[1.75rem] p-4 sm:p-5 lg:p-6">
+      <div className="mb-4 flex items-center justify-between gap-3 sm:mb-5">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-sky-200/65">
             Forca
           </p>
-          <h3 className="mt-2 display-font text-xl font-semibold text-white">
+          <h3 className="mt-2 display-font text-lg font-semibold text-white sm:text-xl">
             Boneco da forca
           </h3>
         </div>
@@ -24,8 +24,11 @@ export function HangmanFigure({ wrongGuesses, maxErrors }: HangmanFigureProps) {
         </span>
       </div>
 
-      <div className="rounded-[1.5rem] border border-white/8 bg-[radial-gradient(circle_at_top,rgba(125,180,255,0.1),transparent_52%),rgba(3,10,22,0.35)] p-4">
-        <svg viewBox="0 0 240 240" className="mx-auto w-full max-w-[280px]">
+      <div className="rounded-[1.5rem] border border-white/8 bg-[radial-gradient(circle_at_top,rgba(125,180,255,0.1),transparent_52%),rgba(3,10,22,0.35)] p-3 sm:p-4">
+        <svg
+          viewBox="0 0 240 240"
+          className="mx-auto w-full max-w-[210px] sm:max-w-[250px] lg:max-w-[280px]"
+        >
           <line
             x1="32"
             y1="208"
@@ -151,15 +154,6 @@ export function HangmanFigure({ wrongGuesses, maxErrors }: HangmanFigureProps) {
             strokeLinecap="round"
           />
         </svg>
-      </div>
-
-      <div className="mt-4 rounded-[1.25rem] border border-white/8 bg-black/10 p-4">
-        <p className="text-xs uppercase tracking-[0.22em] text-slate-400">
-          Progresso visual
-        </p>
-        <p className="mt-2 text-sm leading-7 text-slate-300">
-          O boneco agora revela o rosto por ultimo, deixando os olhos para o fim da rodada.
-        </p>
       </div>
     </div>
   );

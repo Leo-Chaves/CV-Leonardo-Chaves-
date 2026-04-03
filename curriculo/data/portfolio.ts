@@ -1,6 +1,6 @@
 export const personalInfo = {
   name: "Leonardo Chaves da Paz",
-  role: "Desenvolvedor Full Stack em formacao",
+  role: "Desenvolvedor Full Stack",
   headline:
     "Construo interfaces claras, integracoes uteis e experiencias web pensadas para resolver problemas reais.",
   summary:
@@ -91,7 +91,7 @@ export const projects = [
       "Projeto autoral em Next.js criado como demonstracao de interface interativa, logica de jogo e cuidado visual dentro do proprio portfolio.",
     tags: ["Next.js", "TypeScript", "UX", "UI interativa"],
     href: "/jogo-da-forca",
-    cta: "Abrir demo",
+    cta: "Jogar",
   },
   {
     title: "Escola do Consenso",

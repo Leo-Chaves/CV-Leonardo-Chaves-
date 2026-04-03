@@ -27,7 +27,7 @@ export function ProjectCard({
           </h3>
         </div>
         <span className="rounded-full border border-sky-300/15 bg-sky-300/8 px-3 py-1 text-xs font-medium text-sky-100/80">
-          {href ? "Ao vivo" : "Conceito"}
+          {href ? "Jogar" : "Projeto"}
         </span>
       </div>
 

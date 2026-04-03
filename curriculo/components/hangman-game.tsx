@@ -139,21 +139,17 @@ export function HangmanGame() {
 
   return (
     <>
-      <div className="grid gap-6 xl:grid-cols-[1.18fr_0.82fr]">
-        <section className="section-card order-1 rounded-[1.9rem] p-5 sm:p-7">
+      <div className="grid gap-6 xl:grid-cols-[1.18fr_0.82fr] xl:items-start">
+        <aside className="order-1 xl:order-2">
+          <HangmanFigure wrongGuesses={wrongLetters.length} maxErrors={MAX_ERRORS} />
+        </aside>
+
+        <section className="section-card order-2 rounded-[1.9rem] p-5 sm:p-7 xl:order-1">
           <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-sky-200/65">
-                Jogo interativo
-              </p>
-              <h2 className="mt-3 display-font text-3xl font-semibold text-white sm:text-4xl">
-                Adivinhe o filme antes do ultimo detalhe aparecer
+              <h2 className="display-font text-3xl font-semibold text-white sm:text-4xl">
+                Jogo da Forca
               </h2>
-              <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-300 sm:text-base">
-                Agora o jogo usa titulos em portugues, ganhou mais tentativas e um
-                boneco mais detalhado. No mobile, as acoes principais aparecem mais cedo
-                para a partida ficar mais confortavel.
-              </p>
             </div>
 
             <div className="flex flex-wrap gap-3">
@@ -202,7 +198,6 @@ export function HangmanGame() {
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-sky-200/65">
                 Palavra secreta
               </p>
-              <p className="text-xs text-slate-400">Titulos em portugues, com espacos visiveis</p>
             </div>
 
             <div className="mt-5 flex max-w-full flex-col items-start gap-3 overflow-hidden">
@@ -314,10 +309,6 @@ export function HangmanGame() {
             </div>
           </div>
         </section>
-
-        <aside className="order-2">
-          <HangmanFigure wrongGuesses={wrongLetters.length} maxErrors={MAX_ERRORS} />
-        </aside>
       </div>
 
       {showResultModal ? (
